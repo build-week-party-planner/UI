@@ -140,7 +140,7 @@ body .nav {
   flex-direction: row;
   height: 20%;
   width: 100%;
-  background-color: grey;
+  background-color: #132E56;
 }
 body .nav nav {
   display: flex;
@@ -168,19 +168,21 @@ body div div button {
   font-size: 25px;
   border-radius: 15px;
   width: 200px;
+  color: #A7A5FB;
+  background-color: white;
 }
 body #Party-Planner {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: lightgrey;
+  background-color: #CCD3DE;
 }
 body #Party-Planner img {
   width: 100%;
   align-content: center;
   margin-top: 50px;
-  background-color: lightgrey;
+  background-color: #CCD3DE;
   border-radius: 20px;
   padding: 0 5%;
 }
@@ -195,12 +197,13 @@ body #Party-Planner article {
 }
 body #Party-Planner article h3 {
   padding: 10px;
-  border: 3px solid grey;
+  border: 3px solid #5d78a1;
   border-radius: 15px;
-  color: grey;
+  color: white;
   font-size: 30px;
   text-align: center;
   margin: 5px;
+  background-color: #125CCC;
 }
 body #Party-Planner div {
   margin: 20px  auto;
@@ -211,16 +214,16 @@ body #Party-Planner div {
 }
 body #Party-Planner h1 {
   font-size: 80px;
-  color: grey;
+  color: #132E56;
   margin: 15px 0;
 }
 body #Party-Planner h2 {
   font-size: 30px;
-  color: grey;
+  color: #5D78A1;
 }
 body #Party-Planner p {
   font-size: 20px;
-  color: grey;
+  color: #5D78A1;
   margin: 15px 0;
 }
 body #Features {
@@ -233,7 +236,7 @@ body #Features {
 body #Features img {
   width: 100%;
   align-content: center;
-  background-color: lightgrey;
+  background-color: #E8E5FA;
 }
 body #Features article {
   margin: 0 auto;
@@ -246,13 +249,14 @@ body #Features article {
 }
 body #Features article h3 {
   padding: 10px;
-  border: 3px solid grey;
+  border: 3px solid #125CCC;
   border-radius: 15px;
-  color: grey;
+  color: #E8E5FA;
   font-size: 30px;
   text-align: center;
   margin: 5px;
-  width: 70%;
+  width: 100%;
+  background-color: #125CCC;
 }
 body #Features div {
   margin: 20px  auto;
@@ -263,15 +267,41 @@ body #Features div {
 }
 body #Features h1 {
   font-size: 80px;
-  color: grey;
+  color: #132E56;
   margin: 15px 0;
 }
 body #Features h2 {
   font-size: 30px;
-  color: grey;
+  color: #7D69F8;
 }
 body #Features p {
   font-size: 20px;
-  color: grey;
+  color: #5D78A1;
   margin: 15px 0;
+}
+body footer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+}
+body footer footer .nav {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  width: 100%;
+  background-color: #132E56;
+}
+body footer footer .nav nav {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+body footer footer .nav nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+  width: 100%;
+  margin: 5%;
 }
