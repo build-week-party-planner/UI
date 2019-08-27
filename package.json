@@ -4,7 +4,7 @@
   "description": ">Solves the problem of having to keep track and organize events.",
   "main": "index.js",
   "scripts": {
-    "start": "less-watch-compiler less css less/index.less"
+    "start": "concurrently \"live-server\" \"less-watch-compiler less css index.less\""
   },
   "repository": {
     "type": "git",

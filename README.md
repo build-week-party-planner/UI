@@ -1,5 +1,11 @@
 # UI
 
+## How to use this repo
+
+To have a smooth development experience, follow the following steps:
+ 1. Run `npm intall` to install the dependencies
+ 2. Run `npm start` to start live compiling of less to css with live-reload
+
 ## Proposal
 
 ### What problem does your app solve?
