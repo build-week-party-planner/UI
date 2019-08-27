@@ -4,7 +4,7 @@
   "description": ">Solves the problem of having to keep track and organize events.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "less-watch-compiler less css less/index.less"
   },
   "repository": {
     "type": "git",
