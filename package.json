@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/build-week-party-planner/UI/issues"
   },
-  "homepage": "https://github.com/build-week-party-planner/UI#readme"
+  "homepage": "https://github.com/build-week-party-planner/UI#readme",
+  "devDependencies": {
+    "less": "^3.10.3",
+    "less-watch-compiler": "^1.13.0"
+  }
 }
