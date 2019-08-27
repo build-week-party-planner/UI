@@ -1,116 +1,88 @@
 body {
-  margin: auto;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  width: 90%;
+  max-width: 90%;
   font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
 }
-body .nav {
+body .sec-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0 20px 0;
+  background-color: #d2ddee;
+}
+body .sec-1 h2 {
+  width: 50%;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+body .sec-1 nav {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 50%;
+  align-items: center;
+}
+body .sec-1 nav .links {
   display: flex;
   flex-direction: column;
-  height: 20%;
-  width: 90%;
-  background-color: #d2ddee;
-  margin: auto;
 }
-body .nav nav {
+body .sec-1 nav .links a {
+  text-decoration: none;
+}
+body .sec-1 nav .buttonLog {
+  display: flex;
+  width: 100%;
+  padding-bottom: 4px;
+}
+body .sec-1 nav .buttonLog .sign {
+  width: 45%;
+  border: #5d78a1 solid 1px;
+  border-radius: 20px;
+  padding: 10px 8px 10px 8px;
+  margin: 0 10px 0 0;
+}
+body .sec-1 nav .buttonLog .reg {
+  width: 45%;
+  border: #5d78a1 solid 1px;
+  border-radius: 20px;
+  padding: 10px 8px 10px 8px;
+}
+body .sec-1 #a2 {
+  display: none;
+}
+body .sec-1 #a4 {
+  display: none;
+}
+body nav {
+  display: flex;
+}
+body .sec-2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: auto;
-  background-color: #ebf1fa;
+  background-image: url("../img/desk.jpg");
+  background-size: cover;
+  background-color: #173eb180;
+  background-blend-mode: multiply;
+  height: 319px;
 }
-body .nav nav a {
-  text-decoration: none;
-  text-align: center;
-  color: #061224;
-  font-size: 1.1rem;
-  width: 90%;
-  margin: auto;
-  border: #073c8a solid 2px;
-  padding: 20px 0 20px 0px;
-  border-radius: 22px;
-  margin-top: 30px;
-  background-color: #d2ddee;
-}
-body .nav h1 {
-  font-size: 2.1rem;
-}
-body .nav div div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 30%;
-}
-body div.nav div h2 {
-  font-size: 100%;
-}
-body div.nav div.top div button.sign {
-  text-align: center;
-  color: #061224;
-  font-size: 1.1rem;
-  width: 87%;
-  margin: auto;
-  border: #073c8a dotted 2px;
-  padding: 10px 0 10px 0px;
-  border-radius: 22px;
-  margin-top: 22px;
-  background-color: #d2ddee;
-}
-body div {
-  display: flex;
-  justify-content: center;
-}
-body footer {
-  background-color: #132e56;
+body .sec-2 h1 {
   color: #ffffff;
+  font-size: 1.6rem;
+  padding-left: 5px;
 }
-body div.nav footer div.foot-1 a {
-  color: #ffffff;
-  margin: 20px 0;
-  font-size: 1.08rem;
-  text-decoration: none;
-  border-right: #ffffff solid 1px;
-  padding: 0px 20px 0 20px;
-}
-body div.nav footer div.foot-1 a#noLine {
-  border-right: none;
-}
-body div.nav footer .foot-2 {
+body .sec-2 .sign-up {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 9px;
-  font-size: 0.8rem;
+  margin-left: 15px;
 }
-@media (min-width: 500px) {
-  body body {
-    width: 90%;
-  }
-  body h1 {
-    font-size: 2.1rem;
-  }
-  body div.nav div.top {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  body div.nav div.top div button.sign {
-    border: #061224 solid 1px;
-    width: 60%;
-  }
-  body nav.navBars {
-    display: flex;
-    flex-direction: row;
-    background-color: #ebf1fa;
-    width: 95%;
-  }
-  body nav.navBars a {
-    border: none;
-    margin-top: 0;
-    border-radius: 0;
-    box-shadow: -10px -11px 10px 0px #125ccc;
-  }
-  body nav.navBars a:hover {
-    background-color: #ccd3de;
-  }
+body .sec-2 .reg {
+  width: 25%;
+  border: #5d78a1 solid 1px;
+  border-radius: 20px;
+  padding: 10px 8px 10px 8px;
+  color: #ffffff;
 }
