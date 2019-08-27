@@ -127,33 +127,35 @@ table {
   border-spacing: 0;
 }
 html {
-  background-color: lightgray;
+  background-color: white;
 }
 body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: white;
+  width: 60rem;
 }
 body .nav {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  height: 20%;
-  width: 100%;
   background-color: #132E56;
+  width: 98%;
 }
 body .nav nav {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  justify-content: flex-start;
+  width: 70%;
+  font-family: 'Open Sans', sans-serif;
 }
 body .nav nav a {
   text-decoration: none;
   text-align: center;
   color: white;
-  font-size: 120%;
-  width: 100%;
   margin: 5%;
+  font-family: 'Open Sans', sans-serif;
 }
 body div div {
   display: flex;
@@ -166,142 +168,97 @@ body div div button {
   padding: 15px 40px;
   margin-right: 45px;
   font-size: 25px;
-  border-radius: 15px;
+  border-radius: 5px;
   width: 200px;
   color: #A7A5FB;
   background-color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 body #Party-Planner {
+  margin: 0 auto;
+  width: 98%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+  align-items: flex-end;
   background-color: #CCD3DE;
-}
-body #Party-Planner img {
-  width: 100%;
-  align-content: center;
-  margin-top: 50px;
-  background-color: #CCD3DE;
-  border-radius: 20px;
-  padding: 0 5%;
-}
-body #Party-Planner article {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 0 5px;
-  background-color: white;
-  border-radius: 5px;
-}
-body #Party-Planner article h3 {
-  padding: 10px;
-  border: 3px solid #5d78a1;
-  border-radius: 15px;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  margin: 5px;
-  background-color: #125CCC;
+  border: 2px solid 132E56;
 }
 body #Party-Planner div {
-  margin: 20px  auto;
+  margin: 0  auto;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 40px;
+  align-items: left;
+  width: 98%;
+  border: 2px solid 132E56;
 }
-body #Party-Planner h1 {
+body #Party-Planner div h1 {
   font-size: 80px;
   color: #132E56;
-  margin: 15px 0;
+  margin: 5% 0 0 5%;
+  font-family: 'Open Sans', sans-serif;
 }
-body #Party-Planner h2 {
+body #Party-Planner div h2 {
   font-size: 30px;
   color: #5D78A1;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1% 0 0 5%;
 }
-body #Party-Planner p {
-  font-size: 20px;
-  color: #5D78A1;
-  margin: 15px 0;
-}
-body #Features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  background-color: lightgrey;
-}
-body #Features img {
+body #Party-Planner div img {
   width: 100%;
-  align-content: center;
-  background-color: #E8E5FA;
+  margin-top: 5%;
+  background-color: #CCD3DE;
+  border-radius: 5px;
 }
-body #Features article {
+body #features {
   margin: 0 auto;
+  width: 98%;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 0 5px;
-  background-color: white;
-  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #CCD3DE;
+  height: 40%;
 }
-body #Features article h3 {
-  padding: 10px;
-  border: 3px solid #125CCC;
-  border-radius: 15px;
-  color: #E8E5FA;
-  font-size: 30px;
+body #features div {
+  display: block;
   text-align: center;
-  margin: 5px;
-  width: 100%;
-  background-color: #125CCC;
+  margin: 0.5%;
+  padding: 1% 0;
+  width: 48%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #132E56;
 }
-body #Features div {
-  margin: 20px  auto;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 40px;
-}
-body #Features h1 {
-  font-size: 80px;
-  color: #132E56;
-  margin: 15px 0;
-}
-body #Features h2 {
+body #features div h3 {
+  text-align: center;
   font-size: 30px;
-  color: #7D69F8;
-}
-body #Features p {
-  font-size: 20px;
   color: #5D78A1;
-  margin: 15px 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1%;
+  padding: 8% 0;
+}
+body #features div i {
+  margin: 0 1rem;
+  font-size: 50px;
+  color: #132E56;
 }
 body footer {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
-}
-body footer footer .nav {
-  display: flex;
-  flex-direction: row;
-  height: 20%;
-  width: 100%;
   background-color: #132E56;
+  width: 98%;
 }
-body footer footer .nav nav {
+body footer nav {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 100%;
 }
-body footer footer .nav nav a {
+body footer nav a {
   text-decoration: none;
   text-align: center;
   color: white;
   font-size: 120%;
   width: 100%;
-  margin: 5%;
+  padding: 5%;
+  font-family: 'Open Sans', sans-serif;
 }
