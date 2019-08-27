@@ -2,8 +2,9 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: #ffffff;
   width: 90%;
+  font-size: 62.5%;
 }
 body .nav {
   display: flex;
@@ -24,7 +25,7 @@ body .nav nav a {
   text-decoration: none;
   text-align: center;
   color: #061224;
-  font-size: 120%;
+  font-size: 1.1rem;
   width: 90%;
   margin: auto;
   border: #073c8a solid 2px;
@@ -32,38 +33,84 @@ body .nav nav a {
   border-radius: 22px;
   margin-top: 30px;
   background-color: #d2ddee;
+}
+body .nav h1 {
+  font-size: 2.1rem;
 }
 body .nav div div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 30%;
 }
 body div.nav div h2 {
   font-size: 100%;
 }
-body button {
+body div.nav div.top div button.sign {
   text-align: center;
   color: #061224;
-  font-size: 120%;
-  width: 90%;
+  font-size: 1.1rem;
+  width: 87%;
   margin: auto;
-  border: #073c8a solid 2px;
-  padding: 20px 0 20px 0px;
+  border: #073c8a dotted 2px;
+  padding: 10px 0 10px 0px;
   border-radius: 22px;
-  margin-top: 30px;
+  margin-top: 22px;
   background-color: #d2ddee;
 }
 body div {
   display: flex;
+  justify-content: center;
 }
-body div .top {
+body footer {
+  background-color: #132e56;
+  color: #ffffff;
+}
+body div.nav footer div.foot-1 a {
+  color: #ffffff;
+  margin: 20px 0;
+  font-size: 1.08rem;
+  text-decoration: none;
+  border-right: #ffffff solid 1px;
+  padding: 0px 20px 0 20px;
+}
+body div.nav footer div.foot-1 a#noLine {
+  border-right: none;
+}
+body div.nav footer .foot-2 {
+  display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-right: 30px;
+  margin: 20px 9px;
+  font-size: 0.8rem;
 }
-body div.sign {
-  width: 90%;
-  margin: auto;
-  background-color: #ebf1fa;
+@media (min-width: 500px) {
+  body body {
+    width: 90%;
+  }
+  body h1 {
+    font-size: 2.1rem;
+  }
+  body div.nav div.top {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body div.nav div.top div button.sign {
+    border: #061224 solid 1px;
+    width: 60%;
+  }
+  body nav.navBars {
+    display: flex;
+    flex-direction: row;
+    background-color: #ebf1fa;
+    width: 95%;
+  }
+  body nav.navBars a {
+    border: none;
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: -10px -11px 10px 0px #125ccc;
+  }
+  body nav.navBars a:hover {
+    background-color: #ccd3de;
+  }
 }
