@@ -1,0 +1,20 @@
+{
+  "name": "build-week-party-planner-ui",
+  "version": "0.1.0",
+  "description": ">Solves the problem of having to keep track and organize events.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/build-week-party-planner/UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/build-week-party-planner/UI/issues"
+  },
+  "homepage": "https://github.com/build-week-party-planner/UI#readme"
+}
