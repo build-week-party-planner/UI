@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 body {
   padding: 0;
   margin: 0 auto;
@@ -441,7 +447,24 @@ body footer nav a {
   padding: 5%;
   font-family: 'Open Sans', sans-serif;
 }
-.header {
+#about {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Open sans", sans-serif;
+}
+#about .header {
   display: flex;
   justify-content: space-between;
+  background-color: #a9cbff;
+  padding: 1rem 1.5rem;
+}
+#about .header .title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+#about .header .cta-btn {
+  min-width: 6rem;
+  background-color: #125ccc;
+  padding: 1rem;
+  cursor: pointer;
 }
