@@ -1,9 +1,91 @@
+
 body {
   padding: 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+body #u-v-p {
+  width: 100%;
+}
+body #u-v-p div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 5%  0;
+}
+body #u-v-p div h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
+  color: #073c8a;
+  margin-bottom: 20px;
+}
+body #u-v-p div p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  color: #5d78a1;
+}
+body #features {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+  padding: 3% 0;
+  background-color: #EBF1FA;
+}
+body #features div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+  width: 45%;
+  max-width: 710px;
+  min-height: 100px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+body #features div .icons {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+body #features div h3 {
+  text-align: center;
+  color: #073c8a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  margin-top: 4%;
+  padding: 2%;
+}
+body #features div i {
+  font-size: 100px;
+  color: #073c8a;
+  width: 100%;
+  margin: 10px;
+}
+body #features div p {
+  font-family: 'Open Sans', sans-serif;
+  color: #5d78a1;
+  font-size: 2.5rem;
+}
+footer {
+  margin: 0 auto;
+  width: 90%;
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
   color: #061224;
@@ -85,6 +167,15 @@ body .sec-2 .sign-up {
   display: flex;
   padding: 19px 0px 0px 52px;
   width: 100%;
+}
+footer nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+  width: 100%;
+  padding: 5%;
+  font-family: 'Open Sans', sans-serif;
 }
 body .sec-2 .reg {
   width: 25%;
