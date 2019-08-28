@@ -1,4 +1,4 @@
-header {
+body {
   padding: 0;
   margin: 0 auto;
   display: flex;
@@ -7,61 +7,65 @@ header {
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
   color: #061224;
+  height: 100%;
 }
-header .sec-1 {
+body .sec-1 {
   display: flex;
   justify-content: space-between;
   padding: 2px 0 0 0;
   background-color: #d2ddee;
+  font-family: "Open Sans", sans-serif;
 }
-header .sec-1 h2 {
+body .sec-1 h2 {
   width: 50%;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   letter-spacing: 1px;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
-header .sec-1 nav {
+body .sec-1 nav {
   display: flex;
   flex-direction: column-reverse;
   width: 50%;
   align-items: center;
 }
-header .sec-1 nav .links {
+body .sec-1 nav .links {
   display: flex;
   flex-direction: column;
 }
-header .sec-1 nav .links a {
+body .sec-1 nav .links a {
   text-decoration: none;
   font-size: 0.9rem;
 }
-header .sec-1 nav .buttonLog {
+body .sec-1 nav .buttonLog {
   display: flex;
   width: 100%;
   padding-top: 6px;
 }
-header .sec-1 nav .buttonLog .sign {
+body .sec-1 nav .buttonLog .sign {
   width: 45%;
   border: #5d78a1 solid 1px;
   border-radius: 20px;
   padding: 10px 8px 10px 8px;
   margin: 0 10px 0 0;
 }
-header .sec-1 nav .buttonLog .log {
+body .sec-1 nav .buttonLog .log {
   width: 45%;
   border: #5d78a1 solid 1px;
   border-radius: 20px;
   padding: 10px 8px 10px 8px;
 }
-header .sec-1 .tag2 {
+body .sec-1 .tag2 {
   visibility: hidden;
 }
-header .sec-1 .tag4 {
+body .sec-1 .tag4 {
   visibility: hidden;
 }
-header nav {
+body nav {
   display: flex;
 }
-header .sec-2 {
+body .sec-2 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -70,18 +74,19 @@ header .sec-2 {
   background-color: #173eb180;
   background-blend-mode: multiply;
   height: 175px;
+  font-family: "Open Sans", sans-serif;
 }
-header .sec-2 h1 {
+body .sec-2 h1 {
   color: #ffffff;
   font-size: 1.6rem;
-  padding-left: 10px;
+  padding: 4px 0px 0px 10px;
 }
-header .sec-2 .sign-up {
+body .sec-2 .sign-up {
   display: flex;
-  padding-left: 43px;
+  padding: 19px 0px 0px 52px;
   width: 100%;
 }
-header .sec-2 .reg {
+body .sec-2 .reg {
   width: 25%;
   border: #5d78a1 solid 1px;
   border-radius: 20px;
@@ -89,68 +94,68 @@ header .sec-2 .reg {
   color: #ffffff;
 }
 @media (min-width: 500px) {
-  header body {
-    max-width: 100%;
+  body body {
+    width: 100%;
   }
-  header #a2 {
+  body #a2 {
     visibility: visible;
   }
-  header #a4 {
+  body #a4 {
     visibility: visible;
   }
-  header .sec-1 {
+  body .sec-1 {
     display: flex;
     flex-direction: row;
   }
-  header .sec-1 h2 {
-    width: 35%;
+  body .sec-1 h2 {
     font-size: 2rem;
     padding-left: 43px;
   }
-  header .sec-1 nav {
+  body .sec-1 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 65%;
+    padding-bottom: 11px;
   }
-  header .sec-1 nav .links {
+  body .sec-1 nav .links {
     display: flex;
     flex-direction: row;
     width: 50%;
     justify-content: space-between;
     font-size: 1rem;
   }
-  header .sec-1 nav .links a {
+  body .sec-1 nav .links a {
     width: 100%;
     text-align: center;
   }
-  header .sec-1 nav .links a:hover {
+  body .sec-1 nav .links a:hover {
     color: #073c8a;
   }
-  header .sec-1 nav .buttonLog {
+  body .sec-1 nav .buttonLog {
     width: 35%;
   }
-  header .sec-1 nav .buttonLog .sign {
+  body .sec-1 nav .buttonLog .sign {
     box-shadow: -6px -3px #7d69f8;
     width: 100%;
     opacity: 0.6;
     transition: 0.3s;
     background-color: #d2ddee;
   }
-  header .sec-1 nav .buttonLog .sign:hover {
+  body .sec-1 nav .buttonLog .sign:hover {
     opacity: 1;
   }
-  header .sec-1 nav .buttonLog .log {
+  body .sec-1 nav .buttonLog .log {
     box-shadow: -6px -3px #7d69f8;
     width: 100%;
     background-color: #d2ddee;
     opacity: 0.6;
     transition: 0.3s;
   }
-  header .sec-1 nav .buttonLog .log:hover {
+  body .sec-1 nav .buttonLog .log:hover {
     opacity: 1;
   }
-  header .sec-2 {
+  body .sec-2 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -158,24 +163,60 @@ header .sec-2 .reg {
     background-size: cover;
     background-color: #173eb180;
     background-blend-mode: multiply;
-    height: 230px;
+    height: 48vh;
   }
-  header .sec-2 h1 {
+  body .sec-2 h1 {
     padding-left: 43px;
+    padding-top: 40px;
+    font-size: 3rem;
   }
-  header .sec-2 div.sign-up {
-    padding: 10px 0px 0px 65px;
+  body .sec-2 div.sign-up {
+    padding: 40px 0px 0px 65px;
   }
-  header .sec-2 div.sign-up .reg {
+  body .sec-2 div.sign-up .reg {
     color: #061224;
     background-color: #d2ddee;
     font-size: 0.9rem;
     padding: 10px 4px 10px 4px;
     width: 18%;
   }
-  header .sec-2 div.sign-up .reg:hover {
+  body .sec-2 div.sign-up .reg:hover {
     background-color: #7d69f8;
   }
+}
+footer {
+  width: 100%;
+}
+.foot {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+  background-color: #132e56;
+  padding: 20px 0;
+  text-align: center;
+}
+.foot .foot-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.foot .foot-1 a {
+  color: #ffffff;
+  font-size: 0.7rem;
+}
+.foot-2 {
+  display: flex;
+  background-color: #132e56;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  margin-top: 1px;
+}
+.foot-2 a {
+  padding: 15px 0 15px 0;
+  font-size: 0.7rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -309,6 +350,7 @@ html {
   background-color: white;
 }
 #u-v-p {
+  margin: auto;
   width: 100%;
 }
 #u-v-p div {
@@ -382,52 +424,7 @@ html {
   color: #5d78a1;
   font-size: 30px;
 }
-body {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 60rem;
-}
-body .nav {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  background-color: #132E56;
-  width: 98%;
-}
-body .nav nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 70%;
-  font-family: 'Open Sans', sans-serif;
-}
-body .nav nav a {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  margin: 5%;
-  font-family: 'Open Sans', sans-serif;
-}
-body div div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  width: 40%;
-}
-body div div button {
-  padding: 15px 40px;
-  margin-right: 45px;
-  font-size: 25px;
-  border-radius: 5px;
-  width: 200px;
-  color: #A7A5FB;
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
-}
-body #Party-Planner {
+#Party-Planner {
   margin: 0 auto;
   width: 98%;
   display: flex;
@@ -436,7 +433,7 @@ body #Party-Planner {
   background-color: #CCD3DE;
   border: 2px solid 132E56;
 }
-body #Party-Planner div {
+#Party-Planner div {
   margin: 0  auto;
   display: flex;
   flex-direction: column;
@@ -444,25 +441,25 @@ body #Party-Planner div {
   width: 98%;
   border: 2px solid 132E56;
 }
-body #Party-Planner div h1 {
+#Party-Planner div h1 {
   font-size: 80px;
   color: #132E56;
   margin: 5% 0 0 5%;
   font-family: 'Open Sans', sans-serif;
 }
-body #Party-Planner div h2 {
+#Party-Planner div h2 {
   font-size: 30px;
   color: #5D78A1;
   font-family: 'Open Sans', sans-serif;
   margin: 1% 0 0 5%;
 }
-body #Party-Planner div img {
+#Party-Planner div img {
   width: 100%;
   margin-top: 5%;
   background-color: #CCD3DE;
   border-radius: 5px;
 }
-body #features {
+#features {
   margin: 0 auto;
   width: 98%;
   display: flex;
@@ -471,7 +468,7 @@ body #features {
   background-color: #CCD3DE;
   height: 40%;
 }
-body #features div {
+#features div {
   display: block;
   text-align: center;
   margin: 0.5%;
@@ -481,7 +478,7 @@ body #features div {
   border-radius: 5px;
   border: 1px solid #132E56;
 }
-body #features div h3 {
+#features div h3 {
   text-align: center;
   font-size: 30px;
   color: #5D78A1;
@@ -489,29 +486,8 @@ body #features div h3 {
   margin: 1%;
   padding: 8% 0;
 }
-body #features div i {
+#features div i {
   margin: 0 1rem;
   font-size: 50px;
   color: #132E56;
-}
-body footer {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background-color: #132E56;
-  width: 98%;
-}
-body footer nav {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-body footer nav a {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-size: 120%;
-  width: 100%;
-  padding: 5%;
-  font-family: 'Open Sans', sans-serif;
 }

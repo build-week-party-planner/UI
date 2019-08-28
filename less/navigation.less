@@ -1,4 +1,4 @@
-header {
+body {
   padding: 0;
   margin: 0 auto;
   display: flex;
@@ -7,17 +7,21 @@ header {
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
   color: @neutral-1;
-  
+  height:100%;
+
   .sec-1 {
     display: flex;
     justify-content: space-between;
     padding: 2px 0 0 0;
     background-color: @primary-5;
+    font-family: "Open Sans", sans-serif;
     h2 {
       width: 50%;
-      font-size: 1.3rem;
+      font-size: 1.9rem;
       letter-spacing: 1px;
       padding-left: 10px;
+      display: flex;
+      align-items: center;
     }
     nav {
       display: flex;
@@ -73,15 +77,16 @@ header {
     background-color: #173eb180;
     background-blend-mode: multiply;
     height: 175px;
+    font-family: "Open Sans", sans-serif;
 
     h1 {
       color: @neutral-6;
       font-size: 1.6rem;
-      padding-left: 10px;
+      padding: 4px 0px 0px 10px;
     }
     .sign-up {
       display: flex;
-      padding-left: 43px;
+      padding: 19px 0px 0px 52px;
       width: 100%;
     }
     .reg {
@@ -94,7 +99,7 @@ header {
   }
   @media (min-width: 500px) {
     body {
-      max-width: 100%;
+      width: 100%;
     }
     #a2 {
       visibility: visible;
@@ -106,7 +111,6 @@ header {
       display: flex;
       flex-direction: row;
       h2 {
-        width: 35%;
         font-size: 2rem;
         padding-left: 43px;
       }
@@ -115,6 +119,7 @@ header {
         flex-direction: row;
         justify-content: space-evenly;
         width: 65%;
+        padding-bottom: 11px;
 
         .links {
           display: flex;
@@ -164,13 +169,16 @@ header {
       background-size: cover;
       background-color: #173eb180;
       background-blend-mode: multiply;
-      height: 230px;
-      h1 {
+      height: 48vh;
+          h1 {
         padding-left: 43px;
+        padding-top: 40px;
+        font-size: 3rem;
+
       }
 
       div.sign-up {
-        padding: 10px 0px 0px 65px;
+        padding: 40px 0px 0px 65px;
         .reg {
           color: @neutral-1;
           background-color: @primary-5;
