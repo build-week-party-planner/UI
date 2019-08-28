@@ -1,68 +1,153 @@
-<<<<<<< HEAD
-header {
+
+body {
   padding: 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+body #u-v-p {
+  width: 100%;
+}
+body #u-v-p div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 5%  0;
+}
+body #u-v-p div h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
+  color: #073c8a;
+  margin-bottom: 20px;
+}
+body #u-v-p div p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  color: #5d78a1;
+}
+body #features {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+  padding: 3% 0;
+  background-color: #EBF1FA;
+}
+body #features div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+  width: 45%;
+  max-width: 710px;
+  min-height: 100px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+body #features div .icons {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+body #features div h3 {
+  text-align: center;
+  color: #073c8a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  margin-top: 4%;
+  padding: 2%;
+}
+body #features div i {
+  font-size: 100px;
+  color: #073c8a;
+  width: 100%;
+  margin: 10px;
+}
+body #features div p {
+  font-family: 'Open Sans', sans-serif;
+  color: #5d78a1;
+  font-size: 2.5rem;
+}
+footer {
+  margin: 0 auto;
+  width: 90%;
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
   color: #061224;
+  height: 100%;
 }
-header .sec-1 {
+body .sec-1 {
   display: flex;
   justify-content: space-between;
   padding: 2px 0 0 0;
   background-color: #d2ddee;
+  font-family: "Open Sans", sans-serif;
 }
-header .sec-1 h2 {
+body .sec-1 h2 {
   width: 50%;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   letter-spacing: 1px;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
-header .sec-1 nav {
+body .sec-1 nav {
   display: flex;
   flex-direction: column-reverse;
   width: 50%;
   align-items: center;
 }
-header .sec-1 nav .links {
+body .sec-1 nav .links {
   display: flex;
   flex-direction: column;
 }
-header .sec-1 nav .links a {
+body .sec-1 nav .links a {
   text-decoration: none;
   font-size: 0.9rem;
 }
-header .sec-1 nav .buttonLog {
+body .sec-1 nav .buttonLog {
   display: flex;
   width: 100%;
   padding-top: 6px;
 }
-header .sec-1 nav .buttonLog .sign {
+body .sec-1 nav .buttonLog .sign {
   width: 45%;
   border: #5d78a1 solid 1px;
   border-radius: 20px;
   padding: 10px 8px 10px 8px;
   margin: 0 10px 0 0;
 }
-header .sec-1 nav .buttonLog .log {
+body .sec-1 nav .buttonLog .log {
   width: 45%;
   border: #5d78a1 solid 1px;
   border-radius: 20px;
   padding: 10px 8px 10px 8px;
 }
-header .sec-1 .tag2 {
+body .sec-1 .tag2 {
   visibility: hidden;
 }
-header .sec-1 .tag4 {
+body .sec-1 .tag4 {
   visibility: hidden;
 }
-header nav {
+body nav {
   display: flex;
 }
-header .sec-2 {
+body .sec-2 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -71,18 +156,28 @@ header .sec-2 {
   background-color: #173eb180;
   background-blend-mode: multiply;
   height: 175px;
+  font-family: "Open Sans", sans-serif;
 }
-header .sec-2 h1 {
+body .sec-2 h1 {
   color: #ffffff;
   font-size: 1.6rem;
-  padding-left: 10px;
+  padding: 4px 0px 0px 10px;
 }
-header .sec-2 .sign-up {
+body .sec-2 .sign-up {
   display: flex;
-  padding-left: 43px;
+  padding: 19px 0px 0px 52px;
   width: 100%;
 }
-header .sec-2 .reg {
+footer nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+  width: 100%;
+  padding: 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+body .sec-2 .reg {
   width: 25%;
   border: #5d78a1 solid 1px;
   border-radius: 20px;
@@ -90,68 +185,68 @@ header .sec-2 .reg {
   color: #ffffff;
 }
 @media (min-width: 500px) {
-  header body {
-    max-width: 100%;
+  body body {
+    width: 100%;
   }
-  header #a2 {
+  body #a2 {
     visibility: visible;
   }
-  header #a4 {
+  body #a4 {
     visibility: visible;
   }
-  header .sec-1 {
+  body .sec-1 {
     display: flex;
     flex-direction: row;
   }
-  header .sec-1 h2 {
-    width: 35%;
+  body .sec-1 h2 {
     font-size: 2rem;
     padding-left: 43px;
   }
-  header .sec-1 nav {
+  body .sec-1 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 65%;
+    padding-bottom: 11px;
   }
-  header .sec-1 nav .links {
+  body .sec-1 nav .links {
     display: flex;
     flex-direction: row;
     width: 50%;
     justify-content: space-between;
     font-size: 1rem;
   }
-  header .sec-1 nav .links a {
+  body .sec-1 nav .links a {
     width: 100%;
     text-align: center;
   }
-  header .sec-1 nav .links a:hover {
+  body .sec-1 nav .links a:hover {
     color: #073c8a;
   }
-  header .sec-1 nav .buttonLog {
+  body .sec-1 nav .buttonLog {
     width: 35%;
   }
-  header .sec-1 nav .buttonLog .sign {
+  body .sec-1 nav .buttonLog .sign {
     box-shadow: -6px -3px #7d69f8;
     width: 100%;
     opacity: 0.6;
     transition: 0.3s;
     background-color: #d2ddee;
   }
-  header .sec-1 nav .buttonLog .sign:hover {
+  body .sec-1 nav .buttonLog .sign:hover {
     opacity: 1;
   }
-  header .sec-1 nav .buttonLog .log {
+  body .sec-1 nav .buttonLog .log {
     box-shadow: -6px -3px #7d69f8;
     width: 100%;
     background-color: #d2ddee;
     opacity: 0.6;
     transition: 0.3s;
   }
-  header .sec-1 nav .buttonLog .log:hover {
+  body .sec-1 nav .buttonLog .log:hover {
     opacity: 1;
   }
-  header .sec-2 {
+  body .sec-2 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -159,24 +254,60 @@ header .sec-2 .reg {
     background-size: cover;
     background-color: #173eb180;
     background-blend-mode: multiply;
-    height: 230px;
+    height: 48vh;
   }
-  header .sec-2 h1 {
+  body .sec-2 h1 {
     padding-left: 43px;
+    padding-top: 40px;
+    font-size: 3rem;
   }
-  header .sec-2 div.sign-up {
-    padding: 10px 0px 0px 65px;
+  body .sec-2 div.sign-up {
+    padding: 40px 0px 0px 65px;
   }
-  header .sec-2 div.sign-up .reg {
+  body .sec-2 div.sign-up .reg {
     color: #061224;
     background-color: #d2ddee;
     font-size: 0.9rem;
     padding: 10px 4px 10px 4px;
     width: 18%;
   }
-  header .sec-2 div.sign-up .reg:hover {
+  body .sec-2 div.sign-up .reg:hover {
     background-color: #7d69f8;
   }
+}
+footer {
+  width: 100%;
+}
+.foot {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+  background-color: #132e56;
+  padding: 20px 0;
+  text-align: center;
+}
+.foot .foot-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.foot .foot-1 a {
+  color: #ffffff;
+  font-size: 0.7rem;
+}
+.foot-2 {
+  display: flex;
+  background-color: #132e56;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  margin-top: 1px;
+}
+.foot-2 a {
+  padding: 15px 0 15px 0;
+  font-size: 0.7rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -306,22 +437,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-=======
->>>>>>> origin/develop
-body {
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-<<<<<<< HEAD
-  justify-content: center;
+html {
   background-color: white;
+}
+#u-v-p {
+  margin: auto;
   width: 100%;
 }
-body #u-v-p {
-  width: 100%;
-}
-body #u-v-p div {
+#u-v-p div {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -329,18 +452,18 @@ body #u-v-p div {
   width: 90%;
   padding: 5%  0;
 }
-body #u-v-p div h3 {
+#u-v-p div h3 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   color: #073c8a;
   margin-bottom: 20px;
 }
-body #u-v-p div p {
+#u-v-p div p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 30px;
   color: #5d78a1;
 }
-body #features {
+#features {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -350,238 +473,112 @@ body #features {
   align-items: center;
   margin-bottom: 15%;
   padding: 3% 0;
-  background-color: #EBF1FA;
+  background-color: #a9cbff;
 }
-body #features div {
+#features div {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 2%;
+  margin: 0.5%;
   padding: 2%;
   width: 45%;
   max-width: 710px;
   min-height: 100px;
   border-radius: 5px;
-  border: 1px solid grey;
+  border: 1px solid white;
 }
-body #features div .icons {
+#features div .icons {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: white;
 }
-body #features div h3 {
+#features div h3 {
   text-align: center;
+  font-size: 30px;
   color: #073c8a;
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
-  margin-top: 4%;
-  padding: 2%;
+  margin: 1%;
+  padding: 2% 0;
 }
-body #features div i {
-  font-size: 100px;
+#features div i {
+  margin: 0 1rem;
+  font-size: 50px;
   color: #073c8a;
   width: 100%;
-  margin: 10px;
 }
-body #features div p {
+#features div p {
   font-family: 'Open Sans', sans-serif;
   color: #5d78a1;
-  font-size: 2.5rem;
+  font-size: 30px;
 }
-footer {
+#Party-Planner {
   margin: 0 auto;
-=======
-  width: 90%;
-  font-size: 62.5%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #CCD3DE;
+  border: 2px solid 132E56;
+}
+#Party-Planner div {
+  margin: 0  auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 98%;
+  border: 2px solid 132E56;
+}
+#Party-Planner div h1 {
+  font-size: 80px;
+  color: #132E56;
+  margin: 5% 0 0 5%;
   font-family: 'Open Sans', sans-serif;
-  color: #061224;
 }
-body .sec-1 {
-  display: flex;
-  justify-content: space-between;
-  padding: 2px 0 0 0;
-  background-color: #d2ddee;
+#Party-Planner div h2 {
+  font-size: 30px;
+  color: #5D78A1;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1% 0 0 5%;
 }
-body .sec-1 h2 {
-  width: 50%;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  padding-left: 10px;
-}
-body .sec-1 nav {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 50%;
-  align-items: center;
-}
-body .sec-1 nav .links {
-  display: flex;
-  flex-direction: column;
-}
-body .sec-1 nav .links a {
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-body .sec-1 nav .buttonLog {
-  display: flex;
+#Party-Planner div img {
   width: 100%;
-  padding-top: 6px;
+  margin-top: 5%;
+  background-color: #CCD3DE;
+  border-radius: 5px;
 }
-body .sec-1 nav .buttonLog .sign {
-  width: 45%;
-  border: #5d78a1 solid 1px;
-  border-radius: 20px;
-  padding: 10px 8px 10px 8px;
-  margin: 0 10px 0 0;
-}
-body .sec-1 nav .buttonLog .log {
-  width: 45%;
-  border: #5d78a1 solid 1px;
-  border-radius: 20px;
-  padding: 10px 8px 10px 8px;
-}
-body .sec-1 .tag2 {
-  visibility: hidden;
-}
-body .sec-1 .tag4 {
-  visibility: hidden;
-}
-body nav {
->>>>>>> origin/develop
+#features {
+  margin: 0 auto;
+  width: 98%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #CCD3DE;
+  height: 40%;
 }
-<<<<<<< HEAD
-footer nav {
-=======
-body .sec-2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-image: url("../img/desk.jpg");
-  background-size: cover;
-  background-color: #173eb180;
-  background-blend-mode: multiply;
-  height: 175px;
-}
-body .sec-2 h1 {
-  color: #ffffff;
-  font-size: 1.6rem;
-  padding-left: 10px;
-}
-body .sec-2 .sign-up {
->>>>>>> origin/develop
-  display: flex;
-  padding-left: 43px;
-  width: 100%;
-}
-<<<<<<< HEAD
-footer nav a {
-  text-decoration: none;
+#features div {
+  display: block;
   text-align: center;
-  color: white;
-  font-size: 120%;
-  width: 100%;
-  padding: 5%;
-  font-family: 'Open Sans', sans-serif;
-=======
-body .sec-2 .reg {
-  width: 25%;
-  border: #5d78a1 solid 1px;
-  border-radius: 20px;
-  padding: 10px 8px 10px 8px;
-  color: #ffffff;
+  margin: 0.5%;
+  padding: 1% 0;
+  width: 48%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #132E56;
 }
-@media (min-width: 500px) {
-  body body {
-    max-width: 90%;
-  }
-  body #a2 {
-    visibility: visible;
-  }
-  body #a4 {
-    visibility: visible;
-  }
-  body .sec-1 {
-    display: flex;
-    flex-direction: row;
-  }
-  body .sec-1 h2 {
-    width: 35%;
-    font-size: 2rem;
-    padding-left: 43px;
-  }
-  body .sec-1 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 65%;
-  }
-  body .sec-1 nav .links {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: space-between;
-    font-size: 1rem;
-  }
-  body .sec-1 nav .links a {
-    width: 100%;
-    text-align: center;
-  }
-  body .sec-1 nav .links a:hover {
-    color: #073c8a;
-  }
-  body .sec-1 nav .buttonLog {
-    width: 35%;
-  }
-  body .sec-1 nav .buttonLog .sign {
-    box-shadow: -6px -3px #7d69f8;
-    width: 100%;
-    opacity: 0.6;
-    transition: 0.3s;
-    background-color: #d2ddee;
-  }
-  body .sec-1 nav .buttonLog .sign:hover {
-    opacity: 1;
-  }
-  body .sec-1 nav .buttonLog .log {
-    box-shadow: -6px -3px #7d69f8;
-    width: 100%;
-    background-color: #d2ddee;
-    opacity: 0.6;
-    transition: 0.3s;
-  }
-  body .sec-1 nav .buttonLog .log:hover {
-    opacity: 1;
-  }
-  body .sec-2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-image: url("../img/desk.jpg");
-    background-size: cover;
-    background-color: #173eb180;
-    background-blend-mode: multiply;
-    height: 230px;
-  }
-  body .sec-2 h1 {
-    padding-left: 43px;
-  }
-  body .sec-2 div.sign-up {
-    padding: 10px 0px 0px 65px;
-  }
-  body .sec-2 div.sign-up .reg {
-    color: #061224;
-    background-color: #d2ddee;
-    font-size: 0.9rem;
-    padding: 10px 4px 10px 4px;
-    width: 18%;
-  }
-  body .sec-2 div.sign-up .reg:hover {
-    background-color: #7d69f8;
-  }
->>>>>>> origin/develop
+#features div h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #5D78A1;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1%;
+  padding: 8% 0;
+}
+#features div i {
+  margin: 0 1rem;
+  font-size: 50px;
+  color: #132E56;
 }
