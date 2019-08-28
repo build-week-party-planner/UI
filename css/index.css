@@ -18,7 +18,7 @@ body .sec-1 h2 {
   width: 50%;
   font-size: 1.3rem;
   letter-spacing: 1px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 body .sec-1 nav {
   display: flex;
@@ -74,11 +74,12 @@ body .sec-2 {
 body .sec-2 h1 {
   color: #ffffff;
   font-size: 1.6rem;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 body .sec-2 .sign-up {
   display: flex;
-  margin-left: 15px;
+  padding-left: 43px;
+  width: 100%;
 }
 body .sec-2 .reg {
   width: 25%;
@@ -104,6 +105,7 @@ body .sec-2 .reg {
   body .sec-1 h2 {
     width: 35%;
     font-size: 2rem;
+    padding-left: 43px;
   }
   body .sec-1 nav {
     display: flex;
@@ -158,11 +160,13 @@ body .sec-2 .reg {
     background-blend-mode: multiply;
     height: 230px;
   }
+  body .sec-2 h1 {
+    padding-left: 43px;
+  }
   body .sec-2 div.sign-up {
-    padding: 10px 0px 0px 30px;
+    padding: 10px 0px 0px 65px;
   }
   body .sec-2 div.sign-up .reg {
-    opacity: 0.5;
     color: #061224;
     background-color: #d2ddee;
     font-size: 0.9rem;
@@ -171,6 +175,5 @@ body .sec-2 .reg {
   }
   body .sec-2 div.sign-up .reg:hover {
     background-color: #7d69f8;
-    opacity: 1;
   }
 }
