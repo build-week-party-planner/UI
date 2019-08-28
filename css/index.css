@@ -1,17 +1,16 @@
 body {
-  box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 90%;
+  width: 90%;
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
 }
 body .sec-1 {
   display: flex;
   justify-content: space-between;
-  padding: 2px 0 20px 0;
+  padding: 2px 0 0 0;
   background-color: #d2ddee;
 }
 body .sec-1 h2 {
@@ -32,11 +31,12 @@ body .sec-1 nav .links {
 }
 body .sec-1 nav .links a {
   text-decoration: none;
+  font-size: 0.9rem;
 }
 body .sec-1 nav .buttonLog {
   display: flex;
   width: 100%;
-  padding-bottom: 4px;
+  padding-top: 6px;
 }
 body .sec-1 nav .buttonLog .sign {
   width: 45%;
@@ -51,11 +51,11 @@ body .sec-1 nav .buttonLog .log {
   border-radius: 20px;
   padding: 10px 8px 10px 8px;
 }
-body .sec-1 #a2 {
-  display: none;
+body .sec-1 .tag2 {
+  visibility: hidden;
 }
-body .sec-1 #a4 {
-  display: none;
+body .sec-1 .tag4 {
+  visibility: hidden;
 }
 body nav {
   display: flex;
@@ -68,7 +68,7 @@ body .sec-2 {
   background-size: cover;
   background-color: #173eb180;
   background-blend-mode: multiply;
-  height: 319px;
+  height: 175px;
 }
 body .sec-2 h1 {
   color: #ffffff;
@@ -85,4 +85,90 @@ body .sec-2 .reg {
   border-radius: 20px;
   padding: 10px 8px 10px 8px;
   color: #ffffff;
+}
+@media (min-width: 500px) {
+  body body {
+    max-width: 90%;
+  }
+  body #a2 {
+    visibility: visible;
+  }
+  body #a4 {
+    visibility: visible;
+  }
+  body .sec-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  body .sec-1 h2 {
+    width: 35%;
+    font-size: 2rem;
+  }
+  body .sec-1 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 65%;
+  }
+  body .sec-1 nav .links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  body .sec-1 nav .links a {
+    width: 100%;
+    text-align: center;
+  }
+  body .sec-1 nav .links a:hover {
+    color: #073c8a;
+  }
+  body .sec-1 nav .buttonLog {
+    width: 35%;
+  }
+  body .sec-1 nav .buttonLog .sign {
+    box-shadow: -6px -3px #7d69f8;
+    width: 100%;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: #d2ddee;
+  }
+  body .sec-1 nav .buttonLog .sign:hover {
+    opacity: 1;
+  }
+  body .sec-1 nav .buttonLog .log {
+    box-shadow: -6px -3px #7d69f8;
+    width: 100%;
+    background-color: #d2ddee;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  body .sec-1 nav .buttonLog .log:hover {
+    opacity: 1;
+  }
+  body .sec-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("../img/desk.jpg");
+    background-size: cover;
+    background-color: #173eb180;
+    background-blend-mode: multiply;
+    height: 230px;
+  }
+  body .sec-2 div.sign-up {
+    padding: 10px 0px 0px 30px;
+  }
+  body .sec-2 div.sign-up .reg {
+    opacity: 0.9;
+    color: black;
+    background-color: #d2ddee;
+    font-size: 0.9rem;
+    padding: 10px 4px 10px 4px;
+    width: 18%;
+  }
+  body .sec-2 div.sign-up .reg:hover {
+    background-color: #7d69f8;
+  }
 }
