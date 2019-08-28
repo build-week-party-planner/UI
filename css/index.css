@@ -177,3 +177,271 @@ body .sec-2 .reg {
     background-color: #7d69f8;
   }
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  background-color: white;
+}
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 60rem;
+}
+body .nav {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #132E56;
+  width: 98%;
+}
+body .nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+  font-family: 'Open Sans', sans-serif;
+}
+body .nav nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin: 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+body div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+}
+body div div button {
+  padding: 15px 40px;
+  margin-right: 45px;
+  font-size: 25px;
+  border-radius: 5px;
+  width: 200px;
+  color: #A7A5FB;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+body #Party-Planner {
+  margin: 0 auto;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #CCD3DE;
+  border: 2px solid 132E56;
+}
+body #Party-Planner div {
+  margin: 0  auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 98%;
+  border: 2px solid 132E56;
+}
+body #Party-Planner div h1 {
+  font-size: 80px;
+  color: #132E56;
+  margin: 5% 0 0 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+body #Party-Planner div h2 {
+  font-size: 30px;
+  color: #5D78A1;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1% 0 0 5%;
+}
+body #Party-Planner div img {
+  width: 100%;
+  margin-top: 5%;
+  background-color: #CCD3DE;
+  border-radius: 5px;
+}
+body #features {
+  margin: 0 auto;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #CCD3DE;
+  height: 40%;
+}
+body #features div {
+  display: block;
+  text-align: center;
+  margin: 0.5%;
+  padding: 1% 0;
+  width: 48%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #132E56;
+}
+body #features div h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #5D78A1;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1%;
+  padding: 8% 0;
+}
+body #features div i {
+  margin: 0 1rem;
+  font-size: 50px;
+  color: #132E56;
+}
+body footer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #132E56;
+  width: 98%;
+}
+body footer nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+body footer nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+  width: 100%;
+  padding: 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
