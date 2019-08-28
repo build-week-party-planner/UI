@@ -1,3 +1,182 @@
+header {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  color: #061224;
+}
+header .sec-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0 0 0;
+  background-color: #d2ddee;
+}
+header .sec-1 h2 {
+  width: 50%;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+header .sec-1 nav {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 50%;
+  align-items: center;
+}
+header .sec-1 nav .links {
+  display: flex;
+  flex-direction: column;
+}
+header .sec-1 nav .links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+header .sec-1 nav .buttonLog {
+  display: flex;
+  width: 100%;
+  padding-top: 6px;
+}
+header .sec-1 nav .buttonLog .sign {
+  width: 45%;
+  border: #5d78a1 solid 1px;
+  border-radius: 20px;
+  padding: 10px 8px 10px 8px;
+  margin: 0 10px 0 0;
+}
+header .sec-1 nav .buttonLog .log {
+  width: 45%;
+  border: #5d78a1 solid 1px;
+  border-radius: 20px;
+  padding: 10px 8px 10px 8px;
+}
+header .sec-1 .tag2 {
+  visibility: hidden;
+}
+header .sec-1 .tag4 {
+  visibility: hidden;
+}
+header nav {
+  display: flex;
+}
+header .sec-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("../img/desk.jpg");
+  background-size: cover;
+  background-color: #173eb180;
+  background-blend-mode: multiply;
+  height: 175px;
+}
+header .sec-2 h1 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+header .sec-2 .sign-up {
+  display: flex;
+  padding-left: 43px;
+  width: 100%;
+}
+header .sec-2 .reg {
+  width: 25%;
+  border: #5d78a1 solid 1px;
+  border-radius: 20px;
+  padding: 10px 8px 10px 8px;
+  color: #ffffff;
+}
+@media (min-width: 500px) {
+  header body {
+    max-width: 100%;
+  }
+  header #a2 {
+    visibility: visible;
+  }
+  header #a4 {
+    visibility: visible;
+  }
+  header .sec-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  header .sec-1 h2 {
+    width: 35%;
+    font-size: 2rem;
+    padding-left: 43px;
+  }
+  header .sec-1 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 65%;
+  }
+  header .sec-1 nav .links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  header .sec-1 nav .links a {
+    width: 100%;
+    text-align: center;
+  }
+  header .sec-1 nav .links a:hover {
+    color: #073c8a;
+  }
+  header .sec-1 nav .buttonLog {
+    width: 35%;
+  }
+  header .sec-1 nav .buttonLog .sign {
+    box-shadow: -6px -3px #7d69f8;
+    width: 100%;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: #d2ddee;
+  }
+  header .sec-1 nav .buttonLog .sign:hover {
+    opacity: 1;
+  }
+  header .sec-1 nav .buttonLog .log {
+    box-shadow: -6px -3px #7d69f8;
+    width: 100%;
+    background-color: #d2ddee;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  header .sec-1 nav .buttonLog .log:hover {
+    opacity: 1;
+  }
+  header .sec-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("../img/desk.jpg");
+    background-size: cover;
+    background-color: #173eb180;
+    background-blend-mode: multiply;
+    height: 230px;
+  }
+  header .sec-2 h1 {
+    padding-left: 43px;
+  }
+  header .sec-2 div.sign-up {
+    padding: 10px 0px 0px 65px;
+  }
+  header .sec-2 div.sign-up .reg {
+    color: #061224;
+    background-color: #d2ddee;
+    font-size: 0.9rem;
+    padding: 10px 4px 10px 4px;
+    width: 18%;
+  }
+  header .sec-2 div.sign-up .reg:hover {
+    background-color: #7d69f8;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,9 +305,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html {
-  background-color: white;
-}
 body {
   margin: 0 auto;
   display: flex;
@@ -136,21 +312,6 @@ body {
   justify-content: center;
   background-color: white;
   width: 100%;
-}
-body .nav {
-  width: 100%;
-  height: 100%;
-  background-color: #073c8a;
-}
-body .nav button {
-  padding: 10px;
-  margin: 30px;
-  background-color: #a9cbff;
-}
-body img {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
 }
 body #u-v-p {
   width: 100%;
@@ -165,13 +326,13 @@ body #u-v-p div {
 }
 body #u-v-p div h3 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #073c8a;
   margin-bottom: 20px;
 }
 body #u-v-p div p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
   color: #5d78a1;
 }
 body #features {
@@ -184,7 +345,7 @@ body #features {
   align-items: center;
   margin-bottom: 15%;
   padding: 3% 0;
-  background-color: #a9cbff;
+  background-color: #EBF1FA;
 }
 body #features div {
   margin: 0 auto;
@@ -192,13 +353,13 @@ body #features div {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 0.5%;
+  margin: 2%;
   padding: 2%;
   width: 45%;
   max-width: 710px;
   min-height: 100px;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid grey;
 }
 body #features div .icons {
   margin: 0 auto;
@@ -209,20 +370,41 @@ body #features div .icons {
 }
 body #features div h3 {
   text-align: center;
-  font-size: 30px;
   color: #073c8a;
   font-family: 'Open Sans', sans-serif;
-  margin: 1%;
-  padding: 2% 0;
+  font-size: 3rem;
+  margin-top: 4%;
+  padding: 2%;
 }
 body #features div i {
-  margin: 0 1rem;
-  font-size: 50px;
+  font-size: 100px;
   color: #073c8a;
   width: 100%;
+  margin: 10px;
 }
 body #features div p {
   font-family: 'Open Sans', sans-serif;
   color: #5d78a1;
-  font-size: 30px;
+  font-size: 2.5rem;
+}
+footer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #132E56;
+  width: 98%;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+footer nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+  width: 100%;
+  padding: 5%;
+  font-family: 'Open Sans', sans-serif;
 }
