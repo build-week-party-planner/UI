@@ -133,132 +133,99 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: white;
-  width: 60rem;
+  width: 100%;
+  max-width: 1500px;
 }
 body .nav {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  background-color: #132E56;
-  width: 98%;
-}
-body .nav nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 70%;
-  font-family: 'Open Sans', sans-serif;
-}
-body .nav nav a {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  margin: 5%;
-  font-family: 'Open Sans', sans-serif;
-}
-body div div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  width: 40%;
-}
-body div div button {
-  padding: 15px 40px;
-  margin-right: 45px;
-  font-size: 25px;
-  border-radius: 5px;
-  width: 200px;
-  color: #A7A5FB;
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
-}
-body #Party-Planner {
-  margin: 0 auto;
-  width: 98%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  background-color: #CCD3DE;
-  border: 2px solid 132E56;
-}
-body #Party-Planner div {
-  margin: 0  auto;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  width: 98%;
-  border: 2px solid 132E56;
-}
-body #Party-Planner div h1 {
-  font-size: 80px;
-  color: #132E56;
-  margin: 5% 0 0 5%;
-  font-family: 'Open Sans', sans-serif;
-}
-body #Party-Planner div h2 {
-  font-size: 30px;
-  color: #5D78A1;
-  font-family: 'Open Sans', sans-serif;
-  margin: 1% 0 0 5%;
-}
-body #Party-Planner div img {
   width: 100%;
-  margin-top: 5%;
-  background-color: #CCD3DE;
-  border-radius: 5px;
+  height: 100%;
+  background-color: #073c8a;
+}
+body .nav button {
+  padding: 10px;
+  margin: 30px;
+  background-color: #a9cbff;
+}
+body img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+}
+body #u-v-p {
+  width: 100%;
+}
+body #u-v-p div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 5%  0;
+}
+body #u-v-p div h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  color: #073c8a;
+  margin-bottom: 20px;
+}
+body #u-v-p div p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #5d78a1;
 }
 body #features {
   margin: 0 auto;
-  width: 98%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
-  background-color: #CCD3DE;
-  height: 40%;
+  align-items: center;
+  max-width: 1500px;
+  margin-bottom: 15%;
+  padding: 3% 0;
+  background-color: #a9cbff;
 }
 body #features div {
-  display: block;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   margin: 0.5%;
-  padding: 1% 0;
-  width: 48%;
-  background-color: white;
+  padding: 2%;
+  width: 45%;
+  max-width: 710px;
+  min-height: 100px;
   border-radius: 5px;
-  border: 1px solid #132E56;
+  border: 1px solid white;
+}
+body #features div .icons {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
 }
 body #features div h3 {
   text-align: center;
   font-size: 30px;
-  color: #5D78A1;
+  color: #073c8a;
   font-family: 'Open Sans', sans-serif;
   margin: 1%;
-  padding: 8% 0;
+  padding: 2% 0;
 }
 body #features div i {
   margin: 0 1rem;
   font-size: 50px;
-  color: #132E56;
-}
-body footer {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background-color: #132E56;
-  width: 98%;
-}
-body footer nav {
-  display: flex;
-  flex-direction: row;
+  color: #073c8a;
   width: 100%;
 }
-body footer nav a {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-size: 120%;
-  width: 100%;
-  padding: 5%;
+body #features div p {
   font-family: 'Open Sans', sans-serif;
+  color: #5d78a1;
+  font-size: 30px;
 }
