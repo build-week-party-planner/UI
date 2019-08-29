@@ -22,7 +22,7 @@
       <a href="/about.html">About Us</a>
       <a href="#">Pricing</a>
     </nav>
-    <div class="cta-btn">Get Started</div>
+    <div class="cta-btn" id="btn">Get Started</div>
   </header>
   <main class="main-area">
     <h2 class="heading">Our amazing team</h2>
@@ -38,7 +38,7 @@
         <div class="social-links">
           <a href="https://github.com/srsimps19" target="_blank"><i class="fab fa-github-square"></i></a>
           <a href="https://twitter.com/sydney_crumley" target="_blank"><i class="fab fa-twitter-square"></i></a>
-          <a href="https://linkedincom/in/sydney-crumley" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://linkedin.com/in/sydney-crumley" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </article>
       <article class="profile">
@@ -87,7 +87,7 @@
         </div>
         <div class="social-links">
           <a href="https://github.com/danbergelt" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a href="https://linkedincom/in/danbergelt" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://linkedin.com/in/danbergelt" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </article>
       <article class="profile">
@@ -100,7 +100,7 @@
         </div>
         <div class="social-links">
           <a href="https://github.com/ndacode" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a href="https://linkedincom/in/nicoleadamsmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://linkedin.com/in/nicoleadamsmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </article>
       <article class="profile">
@@ -114,7 +114,7 @@
         <div class="social-links">
           <a href="https://github.com/mikeattara" target="_blank"><i class="fab fa-github-square"></i></a>
           <a href="https://twitter.com/mikeattara" target="_blank"><i class="fab fa-twitter-square"></i></a>
-          <a href="https://linkedincom/in/mikeattara" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://linkedin.com/in/mikeattara" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </article>
     </div>
@@ -147,6 +147,13 @@
       <a> Terms and Conditions</a>
     </div>
   </footer>
+  <script>
+    function redirect() {
+      window.location = 'https://elastic-jennings-52d92d.netlify.com/login';
+    }
+
+    document.getElementById('btn').addEventListener('click', redirect);
+  </script>
 </body>
 
 </html>
