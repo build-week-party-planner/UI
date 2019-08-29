@@ -716,6 +716,8 @@ footer nav a {
   width: 100vw;
   min-height: 100vh;
   font-family: "Open sans", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 #about .header {
   display: flex;
@@ -728,9 +730,66 @@ footer nav a {
   text-transform: uppercase;
   font-size: 2rem;
 }
+#about .header .navigation {
+  min-width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: flex-end;
+}
+#about .header .navigation a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+}
+#about .header .navigation a:hover {
+  border-top: 3px solid #125ccc;
+}
 #about .header .cta-btn {
   min-width: 6rem;
   background-color: #125ccc;
+  color: #eff0f0;
   padding: 1rem;
   cursor: pointer;
+}
+#about .main-area {
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+#about .main-area .heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+#about .main-area .team-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 0;
+}
+#about .main-area .team-list .profile {
+  border: 1px solid black;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#about .main-area .team-list .profile .image-container {
+  height: 20rem;
+  overflow: hidden;
+}
+#about .main-area .team-list .profile .image-container img {
+  width: 100%;
+  height: auto;
+}
+#about .main-area .team-list .profile .text-container {
+  text-align: center;
+  text-transform: uppercase;
+}
+#about .main-area .team-list .profile .text-container p {
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
 }
