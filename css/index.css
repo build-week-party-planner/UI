@@ -786,7 +786,7 @@ footer nav a {
 }
 #about .main-area .team-list .profile {
   border: 1px solid black;
-  min-height: 25rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -798,8 +798,8 @@ footer nav a {
   overflow: hidden;
 }
 #about .main-area .team-list .profile .image-container img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 #about .main-area .team-list .profile .text-container {
   text-align: center;
@@ -825,4 +825,8 @@ footer nav a {
 }
 #about .main-area .team-list .profile:hover .social-links {
   visibility: visible;
+}
+#about footer {
+  max-width: 100vw;
+  margin: 0;
 }
