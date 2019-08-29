@@ -73,7 +73,6 @@ body {
     width: 100%;
     #u-v-p {
         width: 100%;
-
         div {
             margin: 0 auto;
             display: flex;
@@ -81,23 +80,33 @@ body {
             justify-content: center;
             width: 90%;
             padding: 5%  0;
-        
             h3 {
                 font-family: 'Open Sans', sans-serif; 
                 font-size: 5rem;
                 color: #073c8a;
                 margin-bottom: 20px;
-        
-            }
+
+                @media @mobile {
+                    font-size: 1rem;
+                }
+                @media @tablet {
+                    font-size: 3rem;
+                }
+            }    
             p {
                 font-family: 'Open Sans', sans-serif;
                 font-size: 3rem;
                 color: #5d78a1;
-                
+               
+                @media @mobile {
+                    font-size: 1rem;
+                }
+                @media @tablet {
+                    font-size: 1.5rem;
+                }
             }
         }
-    }
-
+    }       
     #features {
         margin: 0 auto;
         display: flex;
@@ -106,10 +115,8 @@ body {
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-bottom: 15%;
         padding: 3% 0;
         background-color: #EBF1FA;
-    
         div {
             margin: 0 auto;
             display: flex;
@@ -122,15 +129,29 @@ body {
             max-width: 710px;
             min-height: 100px;
             border-radius: 5px;
-            border: 1px solid grey; 
-        
+            
+            @media @mobile {
+                width: 70%;
+                max-width: 500px;
+            }
+            @media @tablet {
+                width: 70%;
+                max-width: 710px;
+            }    
             .icons {
                 margin: 0 auto;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 background-color: white;
-            }
+
+                @media @mobile {
+                    width: 80%;
+                }
+                @media @tablet {
+                    width: 80%;
+                }
+            }    
             h3 {
                 text-align: center;
                 color: #073c8a;
@@ -138,19 +159,38 @@ body {
                 font-size: 3rem;
                 margin-top: 4%;
                 padding: 2%;
+
+                @media @mobile {
+                    font-size: 1rem;
+                }
+                @media @tablet {
+                    font-size: 2rem;
+                }
             }
             i {
                 font-size: 100px;
                 color: #073c8a;
                 width: 100%;
                 margin: 10px;
-            }
+
+                @media @mobile {
+                    font-size: 50px;
+                }
+                @media @tablet {
+                    font-size: 70px;
+                }
+            }    
             p {
                 font-family: 'Open Sans', sans-serif;
                 color:#5d78a1;
                 font-size: 2.5rem;
-            }
+                @media @mobile {
+                    font-size: 1.5rem;
+                }
+                @media @tablet {
+                    font-size:  1.5rem;
+                }
+            }    
         }
     }  
-
-    }
+} 
