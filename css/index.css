@@ -766,9 +766,19 @@ footer nav a {
 }
 #about .main-area .team-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
-  padding: 0;
+}
+@media (max-width: 800px) {
+  #about .main-area .team-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #about .main-area .team-list {
+    grid-template-columns: 1fr;
+  }
 }
 #about .main-area .team-list .profile {
   border: 1px solid black;
@@ -778,6 +788,11 @@ footer nav a {
   align-items: center;
   justify-content: space-between;
   position: relative;
+}
+@media (max-width: 500px) {
+  #about .main-area .team-list .profile {
+    width: 90%;
+  }
 }
 #about .main-area .team-list .profile .image-container {
   height: 20rem;

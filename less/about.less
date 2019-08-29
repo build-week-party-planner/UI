@@ -60,9 +60,17 @@
 
         .team-list {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(4, 1fr);
             grid-gap: 2rem;
-            padding: 0;
+
+            @media @tablet {
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1.5rem;
+            }
+
+            @media @mobile {
+                grid-template-columns: 1fr;
+            }
 
             .profile {
             border: 1px solid black;
@@ -72,6 +80,10 @@
             align-items: center;
             justify-content: space-between;
             position: relative;
+
+            @media @mobile {
+                width: 90%;
+            }
 
             .image-container {
                 height: 20rem;
