@@ -764,6 +764,11 @@ footer nav a {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
+@media (max-width: 800px) {
+  #about .main-area .heading {
+    font-size: 2.2rem;
+  }
+}
 #about .main-area .team-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -771,8 +776,7 @@ footer nav a {
 }
 @media (max-width: 800px) {
   #about .main-area .team-list {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 500px) {
@@ -788,11 +792,6 @@ footer nav a {
   align-items: center;
   justify-content: space-between;
   position: relative;
-}
-@media (max-width: 500px) {
-  #about .main-area .team-list .profile {
-    width: 90%;
-  }
 }
 #about .main-area .team-list .profile .image-container {
   height: 20rem;
