@@ -803,6 +803,7 @@ footer nav a {
 @media (max-width: 500px) {
   #about .main-area .team-list {
     grid-template-columns: minmax(0, 1fr);
+    padding: 1rem 3rem;
   }
 }
 #about .main-area .team-list .profile {
