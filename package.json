@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/build-week-party-planner/UI#readme",
   "devDependencies": {
+    "concurrently": "^4.1.2",
     "less": "^3.10.3",
-    "less-watch-compiler": "^1.13.0"
+    "less-watch-compiler": "^1.13.0",
+    "live-server": "^1.2.1"
   }
 }
