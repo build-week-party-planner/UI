@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 body {
   padding: 0;
   margin: 0 auto;
@@ -17,7 +23,7 @@ body .sec-1 {
   font-family: "Open Sans", sans-serif;
 }
 body .sec-1 h2 {
-  width: 50%;
+  width: 55%;
   font-size: 1.9rem;
   letter-spacing: 1px;
   padding-left: 10px;
@@ -37,6 +43,7 @@ body .sec-1 nav .links {
 body .sec-1 nav .links a {
   text-decoration: none;
   font-size: 0.9rem;
+  padding-bottom: 18px;
 }
 body .sec-1 nav .buttonLog {
   display: flex;
@@ -76,12 +83,12 @@ body .sec-2 {
 body .sec-2 h1 {
   color: #ffffff;
   font-size: 1.6rem;
-  padding: 4px 0px 0px 10px;
+  padding: 1.6px 0px 0px 10px;
 }
 body .sec-2 .sign-up {
   display: flex;
-  padding: 19px 0px 0px 52px;
-  width: 100%;
+  padding: 19px 0px 0px 40px;
+  width: 88%;
 }
 body .sec-2 .reg {
   width: 25%;
@@ -89,6 +96,7 @@ body .sec-2 .reg {
   border-radius: 20px;
   padding: 10px 8px 10px 8px;
   color: #ffffff;
+  background-color: #7d69f8;
 }
 @media (min-width: 500px) {
   body body {
@@ -103,9 +111,10 @@ body .sec-2 .reg {
   body .sec-1 {
     display: flex;
     flex-direction: row;
+    padding: 3px 0 8px 0;
   }
   body .sec-1 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-left: 43px;
   }
   body .sec-1 nav {
@@ -118,13 +127,17 @@ body .sec-2 .reg {
   body .sec-1 nav .links {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 100%;
     justify-content: space-between;
     font-size: 1rem;
   }
   body .sec-1 nav .links a {
     width: 100%;
     text-align: center;
+    color: #132e56;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 0;
   }
   body .sec-1 nav .links a:hover {
     color: #073c8a;
@@ -155,21 +168,25 @@ body .sec-2 .reg {
   body .sec-2 {
     height: 42vh;
   }
+  body .sec-2 h1 {
+    font-size: 3rem;
+    padding: 38px 0 0 43px;
+  }
   body .sec-2 .keep {
     padding-left: 43px;
     padding-top: 40px;
     font-size: 3rem;
   }
   body .sec-2 .sign-up {
-    width: 95%;
     padding: 40px 0px 0px 65px;
+    width: 89%;
   }
   body .sec-2 .reg {
-    color: #061224;
-    background-color: #d2ddee;
+    color: #ffffff;
     font-size: 0.9rem;
     padding: 10px 4px 10px 4px;
     width: 18%;
+    background-color: #7d69f8;
   }
   body .sec-2 .links {
     display: flex;
@@ -178,6 +195,7 @@ body .sec-2 .reg {
   body .sec-2 .links a {
     text-decoration: none;
     font-size: 0.9rem;
+    color: #132e56;
   }
   body .sec-2 .buttonLog {
     display: flex;
@@ -442,4 +460,143 @@ body #features div p {
   font-family: 'Open Sans', sans-serif;
   color: #5d78a1;
   font-size: 2.5rem;
+}
+#about {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: "Open sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+#about a {
+  text-decoration: none;
+  color: inherit;
+}
+#about .header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a9cbff;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  #about .header {
+    text-align: center;
+    flex-direction: column;
+  }
+  #about .header .title {
+    padding-bottom: 1rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  #about .header .navigation {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+#about .header .title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+#about .header .navigation {
+  min-width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: flex-end;
+}
+#about .header .navigation a {
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+}
+#about .header .navigation a:hover {
+  border-top: 3px solid #125ccc;
+}
+#about .header .cta-btn {
+  min-width: 6rem;
+  background-color: #125ccc;
+  color: #eff0f0;
+  padding: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  #about .header .cta-btn {
+    display: none;
+  }
+}
+#about .main-area {
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+#about .main-area .heading {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 800px) {
+  #about .main-area .heading {
+    font-size: 2.2rem;
+  }
+}
+#about .main-area .team-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 2rem;
+}
+@media (max-width: 800px) {
+  #about .main-area .team-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 500px) {
+  #about .main-area .team-list {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1rem 3rem;
+  }
+}
+#about .main-area .team-list .profile {
+  border: 1px solid black;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#about .main-area .team-list .profile .image-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#about .main-area .team-list .profile .image-container img {
+  max-width: 100%;
+}
+#about .main-area .team-list .profile .text-container {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+#about .main-area .team-list .profile .text-container p {
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
+}
+#about .main-area .team-list .profile .social-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(232, 229, 250, 0.9);
+  visibility: hidden;
+  position: absolute;
+}
+#about .main-area .team-list .profile .social-links .fab {
+  font-size: 2.5rem;
+}
+#about .main-area .team-list .profile:hover .social-links {
+  visibility: visible;
+}
+#about footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
