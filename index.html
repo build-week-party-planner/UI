@@ -21,14 +21,14 @@
                     <a class="tag2" id="a2" href="pricing.html">Pricing</a>
                     <a class="tag3" id="a3" href="about.html">About Us</a>
                 </div>
-                
+
             </nav>
         </section>
 
         <section class="sec-2">
             <h1>Keep Track Of All Your Party<br />Planning Details!</h1>
             <div class="sign-up">
-                <button class="reg">Get Started</button>
+                <button class="reg" id="btn">Get Started</button>
             </div>
         </section>
     </header>
@@ -116,6 +116,13 @@
             <a> Terms and Conditions</a>
         </div>
     </footer>
+    <script>
+        function redirect() {
+            window.location = 'https://elastic-jennings-52d92d.netlify.com/login';
+        }
+
+        document.getElementById('btn').addEventListener('click', redirect);
+    </script>
 </body>
 
 </html>

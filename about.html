@@ -22,7 +22,7 @@
       <a href="/about.html">About Us</a>
       <a href="#">Pricing</a>
     </nav>
-    <div class="cta-btn">Get Started</div>
+    <div class="cta-btn" id="btn">Get Started</div>
   </header>
   <main class="main-area">
     <h2 class="heading">Our amazing team</h2>
@@ -147,6 +147,13 @@
       <a> Terms and Conditions</a>
     </div>
   </footer>
+  <script>
+    function redirect() {
+      window.location = 'https://elastic-jennings-52d92d.netlify.com/login';
+    }
+
+    document.getElementById('btn').addEventListener('click', redirect);
+  </script>
 </body>
 
 </html>
